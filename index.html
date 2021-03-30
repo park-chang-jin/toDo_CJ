@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpearJin ToDoList</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="toDo">
+      <div class="toDo__left">
+        <h1>I'm Dream Coder</h1>
+        <div class="toDo__star">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="user">
+          <img src="./img/profile.png" alt="profile" class="user__image" />
+          <form class="user__form">
+            <input type="text" class="user__input" placeholder="Name?" />
+            <button type="submit" class="user__btn">
+              <i class="fas fa-mouse"></i>
+            </button>
+          </form>
+          <div class="user__greetings">
+            <div class="greeting__container">
+              <p class="greeting__title"></p>
+              <button class="greeting__edit">
+                <i class="fas fa-pencil-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <form class="work__write">
+            <input type="text" class="work__input" placeholder="To Do?" />
+            <button type="submit" class="work__btn">
+              <i class="fas fa-mouse"></i>
+            </button>
+          </form>
+        </div>
+        <div class="complete">
+          <span>0% Complete</span>
+        </div>
+        <div class="progress__bar">
+          <div class="progress__value"></div>
+        </div>
+      </div>
+
+      <div class="toDo__right">
+        <div class="info">
+          <div class="info__clock">
+            <div class="clock__icon">
+              <i class="far fa-clock"></i>
+            </div>
+            <div class="clock__title">0:0</div>
+          </div>
+          <div class="info__weather">
+            <div class="weather__icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <span class="weather__title">Sun</span>
+          </div>
+        </div>
+        <div class="toDoList">
+          <div class="toDoList__title">
+            <div class="title__icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h1>TO DO LIST</h1>
+          </div>
+          <ul class="list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/clock.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/greeting.js"></script>
+    <script src="src/todo.js"></script>
+  </body>
+</html>
